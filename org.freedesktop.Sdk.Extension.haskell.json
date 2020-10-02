@@ -112,7 +112,7 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.3.3/stack-2.3.3-linux-x86_64.tar.gz",
+                    "url": "https://github-production-release-asset-2e65be.s3.amazonaws.com/34817922/cc9f2e00-d724-11ea-8463-0a595b34b12f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20201002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201002T083410Z&X-Amz-Expires=300&X-Amz-Signature=ee9da529a5d0c73caef026a903d6deb2d7208ab3175eef10e8c3a4b0df02b524&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=34817922&response-content-disposition=attachment%3B+filename%3Dstack-2.3.3-linux-x86_64.tar.gz&response-content-type=application%2Foctet-stream",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/commercialhaskell/stack/releases/latest",
