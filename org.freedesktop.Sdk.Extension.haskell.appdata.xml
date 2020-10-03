@@ -6,4 +6,7 @@
   <name>Haskell platform Sdk extension</name>
   <summary>Extension providing the latest stable release of the Haskell platform</summary>
   <url type="homepage">https://www.haskell.org/</url>
+  <releases>
+    <release version="2.3.3" date="2020-08-05"/>
+  </releases>
 </component>
