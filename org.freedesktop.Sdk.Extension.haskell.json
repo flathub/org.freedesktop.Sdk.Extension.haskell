@@ -113,12 +113,6 @@
                         "x86_64"
                     ],
                     "url": "https://github.com/commercialhaskell/stack/releases/download/v2.3.3/stack-2.3.3-linux-x86_64.tar.gz",
-                    "x-checker-data": {
-                        "type": "html",
-                        "url": "https://github.com/commercialhaskell/stack/releases/latest",
-                        "version-pattern": "/commercialhaskell/stack/releases/tag/v((?:\\d+\\.)?(?:\\d+\\.)?(?:\\d+))",
-                        "url-template": "https://github.com/commercialhaskell/stack/releases/download/v$version/stack-$version-linux-x86_64.tar.gz"
-                    },
                     "sha256": "e7329c75d9c7ea168eb12caa954102e451906f350604a18d6e852ac81da5a2be",
                     "size": 14478157
                 }
