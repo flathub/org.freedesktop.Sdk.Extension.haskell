@@ -25,8 +25,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/numactl/numactl.git",
-                    "tag": "v2.0.13",
-                    "commit": "5d9f16722e3df49dc618a9f361bd482559695db7"
+                    "tag": "v2.0.14",
+                    "commit": "dd6de072c92c892a86e18c0fd0dfa1ba57a9a05d"
                 }
             ],
             "cleanup": [
@@ -112,9 +112,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.3.3/stack-2.3.3-linux-x86_64.tar.gz",
-                    "sha256": "e7329c75d9c7ea168eb12caa954102e451906f350604a18d6e852ac81da5a2be",
-                    "size": 14478157
+                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.5.1/stack-2.5.1-linux-x86_64.tar.gz",
+                    "sha256": "c83b6c93d6541c0bce2175085a04062020f4160a86116e20f3b343b562f2d1e8"
                 }
             ],
             "build-commands": [
