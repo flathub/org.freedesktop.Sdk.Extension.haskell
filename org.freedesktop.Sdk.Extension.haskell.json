@@ -45,30 +45,28 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/8.10.2/ghc-8.10.2-aarch64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/8.10.3/ghc-8.10.3-aarch64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.haskell.org/ghc/download.html",
                         "version-pattern": "((?:\\d+\\.)(?:\\d+\\.)(?:\\d+))",
                         "url-template": "https://downloads.haskell.org/~ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
-                    "sha256": "5cf24189077e6e2dce2aa16367ad8a53f603e751a15010dfb23d067206e55593",
-                    "size": 310742020
+                    "sha256": "a531432d505a1fe886cdc8639d168eb1c92d76464c1270713e01ce81891bbadb"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/8.10.2/ghc-8.10.2-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/8.10.3/ghc-8.10.3-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.haskell.org/ghc/download.html",
                         "version-pattern": "((?:\\d+\\.)(?:\\d+\\.)(?:\\d+))",
                         "url-template": "https://downloads.haskell.org/~ghc/$version/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
-                    "sha256": "94513d82c38c848f489113a75fa5ef4e5a8e3ecfaa74ca90e2620d2193ff1632",
-                    "size": 213280584
+                    "sha256": "c8f3d9f0e61a89eaba1d3ad8fb2eced1af0e81576811261b887993bee12538ac"
                 }
             ]
         },
