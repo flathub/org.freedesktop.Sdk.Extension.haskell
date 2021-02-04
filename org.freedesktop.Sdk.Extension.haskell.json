@@ -60,15 +60,14 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/8.10.2/ghc-8.10.2-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/9.0.1/ghc-9.0.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.haskell.org/ghc/download.html",
                         "version-pattern": "((?:\\d+\\.)(?:\\d+\\.)(?:\\d+))",
                         "url-template": "https://downloads.haskell.org/~ghc/$version/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
-                    "sha256": "94513d82c38c848f489113a75fa5ef4e5a8e3ecfaa74ca90e2620d2193ff1632",
-                    "size": 213280584
+                    "sha256": "c253e7eb62cc9da6524c491c85ec8d3727c2ca6035a8653388e636aaa30a2a0f"
                 }
             ]
         },
