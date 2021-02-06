@@ -45,15 +45,14 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/8.10.2/ghc-8.10.2-aarch64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/9.0.1/ghc-9.0.1-aarch64-deb9-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.haskell.org/ghc/download.html",
                         "version-pattern": "((?:\\d+\\.)(?:\\d+\\.)(?:\\d+))",
-                        "url-template": "https://downloads.haskell.org/~ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
+                        "url-template": "https://downloads.haskell.org/~ghc/$version/ghc-$version-aarch64-deb9-linux.tar.xz"
                     },
-                    "sha256": "5cf24189077e6e2dce2aa16367ad8a53f603e751a15010dfb23d067206e55593",
-                    "size": 310742020
+                    "sha256": "fac7a0bdfc83c05df94024a2d67b8f00a9cd2733b9cb41fb8ad76be399014906"
                 },
                 {
                     "type": "archive",
