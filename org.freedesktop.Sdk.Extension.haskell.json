@@ -74,14 +74,14 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.0.1-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/~ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)-src.tar.xz",
                         "url-template": "https://downloads.haskell.org/~ghc/latest/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
-                    "sha256": "c253e7eb62cc9da6524c491c85ec8d3727c2ca6035a8653388e636aaa30a2a0f"
+                    "sha256": "53f1650ed092230480ff5750b94f409e5dfe66bd07ced00bbbcdf5d6b180234c"
                 }
             ]
         },
