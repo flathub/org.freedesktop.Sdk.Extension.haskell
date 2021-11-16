@@ -117,7 +117,7 @@
                         "version-pattern": "cabal-install-([\\d.]+).tar.gz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
-                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                    "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
                 }
             ],
             "build-commands": [
