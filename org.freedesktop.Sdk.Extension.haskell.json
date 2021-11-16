@@ -1,8 +1,8 @@
 {
     "id": "org.freedesktop.Sdk.Extension.haskell",
-    "branch": "20.08",
+    "branch": "21.08",
     "runtime": "org.freedesktop.Sdk",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
     "separate-locales": false,
@@ -60,28 +60,28 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.0.1-aarch64-deb9-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.2.1-aarch64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/~ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)-src.tar.xz",
-                        "url-template": "https://downloads.haskell.org/~ghc/latest/ghc-$version-aarch64-deb9-linux.tar.xz"
+                        "url-template": "https://downloads.haskell.org/~ghc/latest/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
-                    "sha256": "fac7a0bdfc83c05df94024a2d67b8f00a9cd2733b9cb41fb8ad76be399014906"
+                    "sha256": "717d4246a8b407a807048ce6eddb2785aca2e4c73b6b634c01e1726f42d539a1"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.0.1-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/~ghc/latest/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/~ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)-src.tar.xz",
                         "url-template": "https://downloads.haskell.org/~ghc/latest/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
-                    "sha256": "c253e7eb62cc9da6524c491c85ec8d3727c2ca6035a8653388e636aaa30a2a0f"
+                    "sha256": "53f1650ed092230480ff5750b94f409e5dfe66bd07ced00bbbcdf5d6b180234c"
                 }
             ]
         },
@@ -94,30 +94,30 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.4.0.0-aarch64-ubuntu-18.04.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/~cabal/cabal-install-latest/",
                         "version-pattern": "cabal-install-([\\d.]+).tar.gz",
-                        "url-template": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-$version-aarch64-ubuntu-18.04.tar.xz"
+                        "url-template": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-$version-aarch64-linux-deb10.tar.xz"
                     },
-                    "sha256": "04d378347896dfdc3510b192b97489815cfa5d692f46e2758da0f789e682b8f0"
+                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.4.0.0-x86_64-ubuntu-16.04.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.6.2.0-x86_64-linux-deb10.tar.xz",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/~cabal/cabal-install-latest/",
                         "version-pattern": "cabal-install-([\\d.]+).tar.gz",
-                        "url-template": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-$version-x86_64-ubuntu-16.04.tar.xz"
+                        "url-template": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
-                    "sha256": "cf28f9ffd763476aa2b1730d85cbf155d366fac541f78ee3951e8cb2d6de63e6"
+                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
                 }
             ],
             "build-commands": [
@@ -136,8 +136,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.5.1/stack-2.5.1-linux-x86_64.tar.gz",
-                    "sha256": "c83b6c93d6541c0bce2175085a04062020f4160a86116e20f3b343b562f2d1e8",
+                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.7.3/stack-2.7.3-linux-x86_64.tar.gz",
+                    "sha256": "a6c090555fa1c64aa61c29aa4449765a51d79e870cf759cde192937cd614e72b",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
