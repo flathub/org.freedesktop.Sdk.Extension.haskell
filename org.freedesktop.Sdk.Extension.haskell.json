@@ -103,7 +103,7 @@
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-aarch64-linux-deb10.tar.xz"
                     },
-                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                    "sha256": "d9acee67d4308bc5c22d27bee034d388cc4192a25deff9e7e491e2396572b030"
                 },
                 {
                     "type": "archive",
@@ -118,7 +118,7 @@
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
-                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                    "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
                 }
             ],
             "build-commands": [
