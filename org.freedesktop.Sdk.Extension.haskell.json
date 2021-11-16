@@ -114,7 +114,6 @@
                         "aarch64"
                     ],
                     "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
-                    "version": "3.6.2.0",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
