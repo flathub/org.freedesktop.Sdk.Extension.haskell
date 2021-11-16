@@ -29,9 +29,6 @@
             "make-args": [
                 "install"
             ],
-            "only-arches": [
-                "aarch64"
-            ],
             "sources": [
                 {
                     "type": "git",
