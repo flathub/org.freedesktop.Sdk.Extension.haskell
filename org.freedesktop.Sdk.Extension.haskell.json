@@ -145,32 +145,6 @@
             ]
         },
         {
-            "name": "stack",
-            "buildsystem": "simple",
-            "only-arches": [
-                "x86_64"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "only-arches": [
-                        "x86_64"
-                    ],
-                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.7.3/stack-2.7.3-linux-x86_64.tar.gz",
-                    "sha256": "a6c090555fa1c64aa61c29aa4449765a51d79e870cf759cde192937cd614e72b",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/commercialhaskell/stack/releases/latest",
-                        "version-query": ".tag_name | sub(\"^[vV]\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"stack-\\($version)-linux-x86_64.tar.gz\") | .browser_download_url"
-                    }
-                }
-            ],
-            "build-commands": [
-                "install -C ./stack ${FLATPAK_DEST}/bin/"
-            ]
-        },
-        {
             "name": "scripts",
             "buildsystem": "simple",
             "sources": [
