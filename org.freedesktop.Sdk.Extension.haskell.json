@@ -62,6 +62,7 @@
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
+
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
                     "sha256": "717d4246a8b407a807048ce6eddb2785aca2e4c73b6b634c01e1726f42d539a1"
@@ -71,6 +72,7 @@
                     "only-arches": [
                         "x86_64"
                     ],
+
                     "url": "https://downloads.haskell.org/ghc/9.2.1/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
@@ -113,6 +115,7 @@
                         "type": "html",
                         "url": "https://downloads.haskell.org/cabal/cabal-install-latest/",
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
+
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
                     "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
