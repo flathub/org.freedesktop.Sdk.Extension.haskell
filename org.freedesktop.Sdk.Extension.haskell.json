@@ -13,17 +13,6 @@
     },
     "modules": [
         {
-            "name": "libtinfo.so.5",
-            "buildsystem": "simple",
-            "only-arches": [
-                "aarch64"
-            ],
-            "build-commands": [
-                "install -d /usr/lib/sdk/haskell/lib/",
-                "ln -s /usr/lib/*-linux-gnu*/libtinfo.so.6 /usr/lib/sdk/haskell/lib/libtinfo.so.5"
-            ]
-        },
-        {
             "name": "libnuma",
             "buildsystem": "autotools",
             "make-args": [
