@@ -57,11 +57,11 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/ghc/latest/ghc-9.2.1-aarch64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/ghc/9.2.1/ghc-9.2.1-aarch64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
-                        "version-pattern": "ghc-([\\d.]+)-src.tar.xz",
+                        "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
                     "sha256": "717d4246a8b407a807048ce6eddb2785aca2e4c73b6b634c01e1726f42d539a1"
@@ -71,11 +71,11 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/ghc/latest/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/ghc/9.2.1/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
-                        "version-pattern": "ghc-([\\d.]+)-src.tar.xz",
+                        "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
                     "sha256": "53f1650ed092230480ff5750b94f409e5dfe66bd07ced00bbbcdf5d6b180234c"
@@ -91,12 +91,13 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
+                    "version": "3.6.2.0",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/cabal/cabal-install-latest/",
-                        "version-pattern": "cabal-install-([\\d.]+).tar.gz",
+                        "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-aarch64-linux-deb10.tar.xz"
                     },
                     "sha256": "d9acee67d4308bc5c22d27bee034d388cc4192a25deff9e7e491e2396572b030"
@@ -106,12 +107,12 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-latest/cabal-install-3.6.2.0-x86_64-linux-deb10.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-x86_64-linux-deb10.tar.xz",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/cabal/cabal-install-latest/",
-                        "version-pattern": "cabal-install-([\\d.]+).tar.gz",
+                        "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
                     "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
@@ -138,8 +139,8 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/commercialhaskell/stack/releases/latest",
-                        "version-query": ".tag_name | sub(\"^jq-\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"jq-\" + $version + \".tar.gz\") | .browser_download_url"
+                        "version-query": ".tag_name | sub(\"^[vV]\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"stack-\\($version)-linux-x86_64.tar.gz\") | .browser_download_url"
                     }
                 }
             ],
