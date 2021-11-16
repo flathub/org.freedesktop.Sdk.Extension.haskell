@@ -6,4 +6,8 @@
   <name>Haskell platform Sdk extension</name>
   <summary>Extension providing the latest stable release of the Haskell platform</summary>
   <url type="homepage">https://www.haskell.org/</url>
+  <url type="bugtracker">https://gitlab.haskell.org/ghc/ghc/-/issues</url>
+   <releases>
+        <release version="9.2.1" date="2021-10-29" />
+    </releases>
 </component>
