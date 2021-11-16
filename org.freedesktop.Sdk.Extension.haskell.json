@@ -13,14 +13,36 @@
     },
     "modules": [
         {
-            "name": "libtinfo.so.5",
-            "buildsystem": "simple",
-            "only-arches": [
-                "aarch64"
+            "name": "ncurses",
+            "no-autogen": true,
+            "config-opts": [
+                "--prefix=${FLATPAK_DEST}",
+                "--with-shared",
+                "--with-termlib=tinfo",
+                "--with-versioned-syms"
             ],
-            "build-commands": [
-                "install -d /usr/lib/sdk/haskell/lib/",
-                "ln -s /usr/lib/*-linux-gnu*/libtinfo.so.6 /usr/lib/sdk/haskell/lib/libtinfo.so.5"
+            "make-install-args": [
+                "install.libs"
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/share/man",
+                "/lib/*.a",
+                "/lib/*.la"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz",
+                    "sha256": "97fc51ac2b085d4cde31ef4d2c3122c21abc217e9090a43a30fc5ec21684e059",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 234776,
+                        "stable-only": true,
+                        "url-template": "https://ftp.gnu.org/gnu/ncurses/ncurses-$version.tar.gz"
+                    }
+                }
             ]
         },
         {
@@ -62,7 +84,6 @@
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
-
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
                     "sha256": "717d4246a8b407a807048ce6eddb2785aca2e4c73b6b634c01e1726f42d539a1"
@@ -72,7 +93,6 @@
                     "only-arches": [
                         "x86_64"
                     ],
-
                     "url": "https://downloads.haskell.org/ghc/9.2.1/ghc-9.2.1-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
@@ -94,7 +114,6 @@
                         "aarch64"
                     ],
                     "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
-                    "version": "3.6.2.0",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
@@ -115,7 +134,6 @@
                         "type": "html",
                         "url": "https://downloads.haskell.org/cabal/cabal-install-latest/",
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
-
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
                     "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
@@ -123,32 +141,6 @@
             ],
             "build-commands": [
                 "install -C ./cabal ${FLATPAK_DEST}/bin/"
-            ]
-        },
-        {
-            "name": "stack",
-            "buildsystem": "simple",
-            "only-arches": [
-                "x86_64"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "only-arches": [
-                        "x86_64"
-                    ],
-                    "url": "https://github.com/commercialhaskell/stack/releases/download/v2.7.3/stack-2.7.3-linux-x86_64.tar.gz",
-                    "sha256": "a6c090555fa1c64aa61c29aa4449765a51d79e870cf759cde192937cd614e72b",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/commercialhaskell/stack/releases/latest",
-                        "version-query": ".tag_name | sub(\"^[vV]\"; \"\")",
-                        "url-query": ".assets[] | select(.name==\"stack-\\($version)-linux-x86_64.tar.gz\") | .browser_download_url"
-                    }
-                }
-            ],
-            "build-commands": [
-                "install -C ./stack ${FLATPAK_DEST}/bin/"
             ]
         },
         {
