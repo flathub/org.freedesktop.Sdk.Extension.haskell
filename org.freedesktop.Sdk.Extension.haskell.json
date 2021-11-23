@@ -150,7 +150,8 @@
                 {
                     "type": "script",
                     "commands": [
-                        "export PATH=$PATH:/usr/lib/sdk/haskell/bin"
+                        "export PATH=$PATH:/usr/lib/sdk/haskell/bin",
+                        "export LIBRARY_PATH=$LIBRARY_PATH:/usr/lib/sdk/haskell/lib"
                     ],
                     "dest-filename": "enable.sh"
                 }
