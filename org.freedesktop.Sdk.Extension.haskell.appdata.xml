@@ -9,5 +9,6 @@
   <url type="bugtracker">https://gitlab.haskell.org/ghc/ghc/-/issues</url>
    <releases>
         <release version="9.2.1" date="2021-10-29" />
+        <release version="9.2.2" date="2022-03-05" />
     </releases>
 </component>
