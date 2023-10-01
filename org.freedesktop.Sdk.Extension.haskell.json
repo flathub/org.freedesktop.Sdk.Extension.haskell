@@ -55,8 +55,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/numactl/numactl.git",
-                    "tag": "v2.0.14",
-                    "commit": "dd6de072c92c892a86e18c0fd0dfa1ba57a9a05d",
+                    "tag": "v2.0.16",
+                    "commit": "10285f1a1bad49306839b2c463936460b604e3ea",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -79,28 +79,28 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/ghc/9.4.1/ghc-9.4.1-aarch64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/ghc/9.6.3/ghc-9.6.3-aarch64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-aarch64-deb10-linux.tar.xz"
                     },
-                    "sha256": "7e8ed05533b8ed0440bfb4881e3098333a9dadf24cb6857c2446879e43f7362c"
+                    "sha256": "03c389859319f09452081310fc13af7525063ea8930830ef76be2a14b312271e"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/ghc/9.4.1/ghc-9.4.1-x86_64-deb10-linux.tar.xz",
+                    "url": "https://downloads.haskell.org/ghc/9.6.3/ghc-9.6.3-x86_64-deb10-linux.tar.xz",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://downloads.haskell.org/ghc/latest/",
                         "version-pattern": "ghc-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/ghc/$version/ghc-$version-x86_64-deb10-linux.tar.xz"
                     },
-                    "sha256": "dcbff828b14a59d01d3fda68bb01b9cbc3a321a0c013905f436df5627128aa58"
+                    "sha256": "9ba0458c84efdbba69509c3c57497e22ad03743f816eb9c8b024abc13f7aacaa"
                 }
             ]
         },
@@ -113,7 +113,7 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-aarch64-linux-deb10.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.10.2.0/cabal-install-3.10.2.0-aarch64-linux-deb10.tar.xz",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
@@ -121,14 +121,14 @@
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-aarch64-linux-deb10.tar.xz"
                     },
-                    "sha256": "d9acee67d4308bc5c22d27bee034d388cc4192a25deff9e7e491e2396572b030"
+                    "sha256": "328f7c4335218f836251a4a018039712eb7584e1f164ba510ee7847bf2111e2a"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.6.2.0/cabal-install-3.6.2.0-x86_64-linux-deb10.tar.xz",
+                    "url": "https://downloads.haskell.org/cabal/cabal-install-3.10.2.0/cabal-install-3.10.2.0-x86_64-linux-deb10.tar.xz",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "html",
@@ -136,7 +136,7 @@
                         "version-pattern": "cabal-install-([\\d.]+)[\\S]+\\.tar\\.xz",
                         "url-template": "https://downloads.haskell.org/cabal/cabal-install-$version/cabal-install-$version-x86_64-linux-deb10.tar.xz"
                     },
-                    "sha256": "4759b56e9257e02f29fa374a6b25d6cb2f9d80c7e3a55d4f678a8e570925641c"
+                    "sha256": "545977a0faa44f366dc9b8184ae547ebf5dfc24c8a0a2c192295327b825fb12c"
                 }
             ],
             "build-commands": [
